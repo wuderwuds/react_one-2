@@ -1,0 +1,28 @@
+.wrapper {
+    background-color: rgb(216, 181, 181);
+}
+.wrapper1 {
+    background-color:rgb(166, 244, 166);
+    
+    
+}
+.wrapper2 {
+    margin-left: 30px;
+    
+}
+.wrapper3 {
+    margin-left: auto;
+    
+}
+.wrapper4 {
+    
+    margin-right: auto;
+}
+.wrapper5 {
+    
+   
+    position: sticky;
+    word-break: break-all;
+    
+  
+}
