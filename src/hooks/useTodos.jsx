@@ -34,15 +34,15 @@ export const useTodos = () => {
   
   },[])
   
-  const deleteList = () => {
+  const deleteList = useCallback(() => {
   setTodos([])
-  }
+  }, [])
   
-  const deleteOneTodo = (id) => {
+  const deleteOneTodo = useCallback((id) => {
   setTodos((prev) => prev.filter((todo)=>todo.id !== id))
-  }
+  }, [])
   
-  const updTodoStatus = (id) => {
+  const updTodoStatus = useCallback((id) => {
     setTodos((prev) => prev.map(todo => {
       if (id === todo.id) return {
         ...todo,
@@ -51,11 +51,17 @@ export const useTodos = () => {
       return todo;
   
     }))
-  }
+  }, [])
+
+  const getCurrentTudo = useCallback((id) => {
+    return todos.find(todo => todo.id === id) 
+  }, [todos])
+  
 return {todos, 
   addToList, 
   deleteList, 
   deleteOneTodo, 
-  updTodoStatus
+  updTodoStatus,
+  getCurrentTudo
 }
 } 

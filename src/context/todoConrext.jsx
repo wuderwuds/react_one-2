@@ -6,8 +6,8 @@ export const ContextTodo = React.createContext()
 export const ContextFun = React.createContext()
 
 export const TodosContextProvider = ({children}) => {
-    const {todos, addToList, deleteList, deleteOneTodo, updTodoStatus} = useTodos()
-    const fun = {addToList, deleteList, deleteOneTodo, updTodoStatus}
+    const {todos, addToList, deleteList, deleteOneTodo, updTodoStatus, getCurrentTudo} = useTodos()
+    const fun = {addToList, deleteList, deleteOneTodo, updTodoStatus, getCurrentTudo}
 
     return (
         <ContextTodo.Provider value={todos}>

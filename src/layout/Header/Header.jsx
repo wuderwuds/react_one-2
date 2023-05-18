@@ -1,4 +1,5 @@
-import { Form } from '../Form/form'
+import { Form } from '../../components/Form/form'
+
 import './header.css'
 import React from 'react'
 const Header = () => {
@@ -6,6 +7,8 @@ const Header = () => {
         <>
         <header className="wrapper">Header!!!!</header>
    <Form />
+   
+
         </>
     )
 }
