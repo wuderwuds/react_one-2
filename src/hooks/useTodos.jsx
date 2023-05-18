@@ -56,12 +56,15 @@ export const useTodos = () => {
   const getCurrentTudo = useCallback((id) => {
     return todos.find(todo => todo.id === id) 
   }, [todos])
+
+ 
   
 return {todos, 
   addToList, 
   deleteList, 
   deleteOneTodo, 
   updTodoStatus,
-  getCurrentTudo
+  getCurrentTudo,
+  
 }
 } 

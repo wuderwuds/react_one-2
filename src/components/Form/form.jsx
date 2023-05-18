@@ -3,15 +3,18 @@ import { useState } from "react"
 import { ContextFun } from "../../context/todoConrext"
 
 
-export const Form = () => {
+export const Form = ({closeModal}) => {
    const {addToList} = useContext(ContextFun)
     const [value, setValue] = useState("")
+  
    
     const hundleSubmit = (event) => {
         event.preventDefault()
         // if (!value) return;
         addToList(value)
+        closeModal()
         return setValue('')
+        
     }
     
       

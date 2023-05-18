@@ -5,10 +5,12 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css';
-import App from './App';
-import { CurrentTodo } from './components/CurrentTodo/CurrentTodo';
+
+import { CurrentTodo } from './pages/CurrentTodo/CurrentTodo';
 import { TodosContextProvider } from './context/todoConrext';
 import { Layout } from './layout';
+import { Contacts } from './pages/Contacts/Contacts';
+import { Todos } from './pages/Todos/Todos';
 
 
 
@@ -19,12 +21,20 @@ const router = createBrowserRouter([
     
     children: [{
       path: "tudos",
-      element: <App />,
+      element: <Todos/>,
     },
-  {
+    
+  
+    {
     path: "tudos/:idOfTudo",
     element: <CurrentTodo/>
-  }]
+  },
+  
+  {
+    path: "contacts",
+    element: <Contacts/>
+  }
+]
    
 
   },
@@ -36,11 +46,12 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <TodosContextProvider>
+  
   <React.StrictMode>
-    
+    <TodosContextProvider>
     <RouterProvider router={router} />
+    </TodosContextProvider>
   </React.StrictMode>
-  </TodosContextProvider>
+  
 );
 

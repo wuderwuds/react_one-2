@@ -1,0 +1,27 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    
+    overflow-y: auto;
+    background: rgb(0, 0, 0, 0.3);
+    backdrop-filter: 2px;
+    z-index: 3;
+} 
+
+.modal_content {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    padding:30px 20px 20px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    
+}

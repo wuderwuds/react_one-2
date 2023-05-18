@@ -1,32 +1,33 @@
 
-// import { useState } from 'react';
-import './App.css';
-
-
-import {Main} from './components/Main/Main';
+// // import { useState } from 'react';
+// import './App.css';
 
 
 
+// import { Todos } from './pages/Todos/Todos';
 
 
-function App() {
 
 
 
-return (
-    <div className="App">
+// function App() {
+
+
+
+// return (
+//     <div className="App">
       
     
       
-      <Main/>
-      
+     
+//       <Todos/>
       
    
      
      
              
-    </div>
-  );
-}
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;

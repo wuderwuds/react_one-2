@@ -12,7 +12,7 @@ export const TodoItem = ({todo, index}) => {
 
     return (<li className={`list-group-item d-flex ${styles.wrapper1}`}> 
     {`${index+1}. `}  
-    <span className={todo.status ? 'text-decoration-line-through' : '' } >
+    <span className={todo.status ? 'text-decoration-line-through' : ''} >
     {todo.title} 
     </span>
     <div className={`${styles.wrapper3}`}>

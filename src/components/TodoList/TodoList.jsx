@@ -6,7 +6,7 @@ export const Todo =() => {
   const todos = useContext(ContextTodo)
   
   return (   
-     <ul className='mt-3 list-group'>
+     <ul className='list-group'>
     {todos.map((todo, index)=>{
       return <TodoItem
       key={todo.id}
